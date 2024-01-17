@@ -1,5 +1,6 @@
 import { createNavbar } from "./navbar";
 import { createHomeContent } from "./home";
+import { createMenuContent, createPizzaMenu } from "./menu";
 import "./style.css";
 
 function createContentDiv() {
@@ -32,4 +33,5 @@ function injectContent(createContentFunction) {
   mainContentContainer.appendChild(createContentFunction());
 }
 
-injectContent(createHomeContent);
+// injectContent(createHomeContent);
+injectContent(createMenuContent);
