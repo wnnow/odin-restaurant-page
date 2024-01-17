@@ -1,0 +1,109 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100dvw;
+  background: url(./pizza_wallpaper.jpg);
+  background-repeat: repeat;
+  background-size: 400px auto;
+}
+
+.navbar-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #242424;
+  border-bottom: 2px dotted #909090;
+}
+
+.navbar {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.navbar > div {
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #2b292a;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+.navbar > div:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.main-content {
+  padding: 16px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.main-content-header {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  font-weight: 600;
+  background-color: #2b292a;
+}
+
+.main-content-sub-container {
+  border: 2px solid #ffffff;
+  border-radius: 17px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #2b292a;
+  font-size: 1.25rem;
+}
+.main-content-header,
+.main-content-sub-container {
+  color: #ffffff;
+}
+.content-header-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.main-content-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-content > div {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+  .main-content-container {
+    width: 100%;
+  }
+  .main-content > div {
+    width: 100%;
+  }
+}
