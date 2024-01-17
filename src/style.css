@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 *,
 *:before,
@@ -28,6 +31,7 @@ body {
   padding-bottom: 1rem;
   background-color: #242424;
   border-bottom: 2px dotted #909090;
+  margin-bottom: 16px;
 }
 
 .navbar {
@@ -54,23 +58,23 @@ body {
   border-radius: 15px;
   width: 80%;
   margin: 0 auto;
-  margin-top: 16px;
 }
 
 .main-content-header {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 16px;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 17px;
   font-weight: 600;
   background-color: #2b292a;
+  padding: 24px;
 }
 
 .main-content-sub-container {
   border: 2px solid #ffffff;
   border-radius: 17px;
-  padding: 16px;
+  padding: 24px;
   margin-bottom: 16px;
   background-color: #2b292a;
   font-size: 1.25rem;
@@ -84,7 +88,6 @@ body {
   font-weight: 600;
 }
 .main-content-container {
-  width: 50%;
   margin: 0 auto;
 }
 
@@ -92,18 +95,62 @@ body {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 50px;
+  text-align: center;
+}
+
+/* menu section */
+.menu-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.menu-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-around;
+}
+
+.menu-header-text {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 900px) {
+  /* Home section */
   .main-content {
     width: 80%;
     margin: 0 auto;
-    margin-top: 16px;
   }
   .main-content-container {
     width: 100%;
   }
   .main-content > div {
     width: 100%;
+  }
+  .main-content-sub-container {
+    padding: 16px;
+    font-size: 1rem;
+  }
+  .main-content-header {
+    padding: 16px;
+    font-size: 2rem;
+  }
+  /* menu section */
+  .menu-container {
+    flex-direction: column;
+  }
+  .menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
   }
 }
