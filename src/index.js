@@ -1,6 +1,7 @@
 import { createNavbar } from "./navbar";
 import { createHomeContent } from "./home";
-import { createMenuContent, createPizzaMenu } from "./menu";
+import { createMenuContent } from "./menu";
+import { createContactComponent } from "./contact";
 import "./style.css";
 
 function createContentDiv() {
@@ -34,4 +35,14 @@ function injectContent(createContentFunction) {
 }
 
 // injectContent(createHomeContent);
-injectContent(createMenuContent);
+// injectContent(createMenuContent);
+injectContent(createContactComponent);
+
+// function clearComponent() {
+//   const mainContentContainer = document.querySelector(
+//     "#main-content-container"
+//   );
+//   while (mainContentContainer.firstChild) {
+//     mainContentContainer.removeChild(mainContentContainer.firstChild);
+//   }
+// }

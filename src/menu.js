@@ -1,3 +1,4 @@
+import pizzaMagheritaImage from "./images/pizza_magherita.jpg";
 function createMenuContent() {
   const mainContentHeader = document.createElement("div");
   mainContentHeader.textContent = "Menu";
@@ -5,12 +6,13 @@ function createMenuContent() {
 
   const mainMenuContent = document.createElement("div");
   mainMenuContent.classList.add("main-content");
+
   const pizza1 = createPizzaMenu(
     "Margherita",
     ` Fresh Garlic, Extra Virgin Olive Oil, Basil, Fresh Roma,
   Tomato Sauce, Romano & Mozzarella`,
     15,
-    "pizza_magherita.jpg",
+    pizzaMagheritaImage,
     "Pizza Margherita"
   );
 
