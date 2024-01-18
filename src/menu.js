@@ -22,6 +22,7 @@ function createMenuContent() {
   pizza_magherita.classList.add("menu-image");
 
   const menuContainer1 = document.createElement("div");
+  menuContainer1.classList.add("menu-container");
   menuContainer1.appendChild(pizza_magherita);
   menuContainer1.appendChild(menuInfo1);
 
@@ -53,6 +54,7 @@ function createMenuContent() {
   pizza_cheese.classList.add("menu-image");
 
   const menuContainer2 = document.createElement("div");
+  menuContainer2.classList.add("menu-container");
   menuContainer2.appendChild(pizza_cheese);
   menuContainer2.appendChild(menuInfo2);
 
@@ -84,6 +86,7 @@ function createMenuContent() {
   pizza_bbq_chicken.classList.add("menu-image");
 
   const menuContainer3 = document.createElement("div");
+  menuContainer3.classList.add("menu-container");
   menuContainer3.appendChild(pizza_bbq_chicken);
   menuContainer3.appendChild(menuInfo3);
 
